@@ -1,0 +1,65 @@
+/* src/index.css - minimal styles so it looks decent without Tailwind */
+:root{
+  --bg:#0f1724;
+  --card:#111827;
+  --accent:#2563eb;
+  --text:#e5e7eb;
+}
+
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.game-root{
+  width:100%;
+  max-width:520px;
+  padding:24px;
+  box-sizing:border-box;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:18px;
+  font-size:28px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+input[type="number"]{
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  outline:none;
+  font-size:16px;
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  background:var(--accent);
+  color:white;
+}
+
+.message{
+  margin-top:6px;
+  font-size:15px;
+  text-align:center;
+}
